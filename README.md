@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Mike's Pub Archive
 
 You can use the [editor on GitHub](https://github.com/mikespub-archive/mikespub-archive.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
