@@ -2,15 +2,9 @@
 
 You can use the [editor on GitHub](https://github.com/mikespub-archive/mikespub-archive.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-| Repository | Project Site | Language |
-| ---------- | ------------ | -------- |
-{% for repository in site.github.public_repositories %}{% if repository.archived %}{% else %}| [{{ repository.name }}]({{ repository.html_url }}) | {% if repository.has_pages %}[{{ repository.name }}]({{ repository.homepage }}){% endif %} | {% if repository.language %}({{ repository.language }}){% endif %} |
-{% endif %}{% endfor %}
-
-| Archived Repository | Project Site | Language |
-| ------------------- | ------------ | -------- |
-{% for repository in site.github.public_repositories %}{% if repository.archived %}| [{{ repository.name }}]({{ repository.html_url }}) | {% if repository.has_pages %}[{{ repository.name }}]({{ repository.homepage }}){% endif %} | {% if repository.language %}({{ repository.language }}){% endif %} |
-{% else %}{% endif %}{% endfor %}
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }}) {% if repository.language %}({{ repository.language }}){% endif %}
+{% endfor %}
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
