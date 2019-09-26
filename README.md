@@ -3,7 +3,7 @@
 You can use the [editor on GitHub](https://github.com/mikespub-archive/mikespub-archive.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 {% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }}) {% if repository.language %}({{ repository.language }}){% endif %}
+  * [{{ repository.name }}]({{ repository.html_url }}) {% if repository.language %}({{ repository.language }}){% endif %} {% if repository.fork %} forked from {% repository.parent.full_name %}{% endif %}
 {% endfor %}
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
