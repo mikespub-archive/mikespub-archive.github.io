@@ -3,9 +3,8 @@
 You can use the [editor on GitHub](https://github.com/mikespub-archive/mikespub-archive.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 | Repository | Language | Forked |
-| --- | --- | --- |
-{% for repository in site.github.public_repositories %}
-| [{{ repository.name }}]({{ repository.html_url }}) | {% if repository.language %}({{ repository.language }}){% endif %} | {% if repository.fork %} (*) {% endif %} |{% endfor %}
+| --- | --- | --- |{% for repository in site.github.public_repositories %}
+| [{{ repository.name }}]({{ repository.html_url }}) | {% if repository.language %}{{ repository.language }}{% endif %} | {% if repository.fork %} (*) {% endif %} |{% endfor %}
 
 (*) forked from elsewhere
 
