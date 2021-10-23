@@ -2,4 +2,5 @@ title: Mike's Pub Archive
 description: https://github-archive.mikespub.net/
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-architect
+theme: minima
+#theme: jekyll-theme-architect
