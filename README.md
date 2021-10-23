@@ -5,8 +5,7 @@ You can use the [editor on GitHub](https://github.com/mikespub-archive/mikespub-
 | Repository | Language | Forked |
 | --- | --- | --- |
 {% for repository in site.github.public_repositories %}
-  | [{{ repository.name }}]({{ repository.html_url }}) | {% if repository.language %}({{ repository.language }}){% endif %} | {% if repository.fork %} (*) {% endif %} |
-{% endfor %}
+| [{{ repository.name }}]({{ repository.html_url }}) | {% if repository.language %}({{ repository.language }}){% endif %} | {% if repository.fork %} (*) {% endif %} |{% endfor %}
 
 (*) forked from elsewhere
 
